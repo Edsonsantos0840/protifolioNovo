@@ -62,7 +62,7 @@ export default function CardHeader() {
               Eu posso te ajudar.
             </h2>
 
-            <h3 className="text-[var(--corTexto2)] font-semibold text-justify my-1">
+            <h3 className="text-[var(--corTexto2)] font-semibold text-xl my-1">
               Tenho habilidades em HTML, CSS, JavaScript, TypeScript, React,
               Next.js, Tailwind CSS
             </h3>
