@@ -1,35 +1,26 @@
 import Link from "next/link";
 import { FaGithubSquare, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import CardSocialMedia from "./CardSocialMedia";
 
 export default function Footer() {
   return (
-    <div className="body w-[100vw] lg:w-[98vw] alinha6 md:gap-2 mt-2 p-2 ">
-    <h3 className=" md:mt-5 font-bold ">
-      Esse sou eu.
-    </h3>
-    <p className="text-white/.8 text-center md:mt-[-10px]">
-      Espero que tenha gostado, aguardo seu contato.
-    </p>
+    <footer
+      className="body w-full lg:w-[98vw] flex flex-col items-center justify-center gap-3 mt-4 p-4 text-center"
+      aria-labelledby="rodape"
+    >
+      <h2 id="rodape" className="text-[var(--base)] text-xl font-semibold">
+        Esse sou eu.
+      </h2>
+      <p className="text-white/80 max-w-lg">
+        Espero que tenha gostado, aguardo seu contato.
+      </p>
 
-    <div className="alinha3 gap-3 md:gap-4 my-1 md:my-4">
-      <Link href={"https://github.com/Edsonsantos0840"} target="_blank">
-        <FaGithubSquare className="footerIcones" />
-      </Link>
-      <Link
-        href={"https://www.linkedin.com/in/edsonpsantos/"}
-        target="_blank"
+      <nav
+        className="flex justify-center items-center gap-3 md:gap-5 my-2"
+        aria-label="Redes sociais"
       >
-        <FaLinkedin className="footerIcones" />
-      </Link>
-      <Link
-        href={
-          "https://wa.me/5519982350898?text=Ol%C3%A1%20eu%20v%C3%AD%20seu%20portifolio."
-        }
-        target="_blank"
-      >
-        <FaWhatsapp className="footerIcones" />
-      </Link>
-    </div>
-  </div>
-  )
+        <CardSocialMedia backGround footer />
+      </nav>
+    </footer>
+  );
 }

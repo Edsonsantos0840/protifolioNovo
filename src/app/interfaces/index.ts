@@ -11,7 +11,6 @@ export interface ProdutoProps {
    im8: (StaticImageData | string);
    im9: (StaticImageData | string);
    im10: (StaticImageData | string);
-   im11: (StaticImageData | string);
    nome: string;
    descrição: string;
    tec1: string;

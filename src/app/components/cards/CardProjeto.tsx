@@ -1,8 +1,5 @@
-//Componentes
-
 import BotaoInvertido from "../botões/BotãoInvertido";
 import Carrossel from "../display/Carrossel";
-//Módulos.
 import Link from "next/link";
 import { ProdutoProps } from "@/app/interfaces";
 import Container from "../Container";
@@ -19,48 +16,78 @@ export default function CardProjeto(props: ProdutoProps) {
     props.im8,
     props.im9,
     props.im10,
-    props.im11,
   ].filter(Boolean);
 
   return (
-    <>
-      <Container>
-      <div className="alinha shadow-lg bg-gray-200 p-2  my-2 md:my-4 rounded-lg md:p-4">
-        <div className="alinha ">
-          <div className=" flex flex-col md:justify-around items-center md:my-2 ">
-            <div className="w-full ">
-              <h3 className="text-[var(--corPrincipal)] my-2 font-bold">
-                {props.nome}
-              </h3>
-              <p className="text-[var(--corPrincipal)] my-2 line-clamp-1 ">
-                {props.descrição}
-              </p>
-            </div>
-            <Carrossel images={imagens} />
-          </div>
-          <div className="alinha2 w-full gap-3 shadow-md my-3  ">
-            <div className="conTec ">
-              <h3 className="tec ">{props.tec1}</h3>
-              <Link href={props.site} target="_blank" className=" w-full">
+    <Container>
+      <article
+        className="alinha shadow-lg bg-gray-200 p-2 my-2 md:my-4 rounded-lg md:p-4"
+        aria-labelledby={`projeto-${props.nome.replace(/\s+/g, "-")}`}
+      >
+        <header className="w-full">
+          <h2
+            id={`projeto-${props.nome.replace(/\s+/g, "-")}`}
+            className="text-[var(--corPrincipal)] my-2 font-bold text-xl"
+          >
+            {props.nome}
+          </h2>
+          <p className="text-[var(--corPrincipal)] my-2 line-clamp-2">
+            {props.descrição}
+          </p>
+        </header>
+
+        <Carrossel images={imagens} />
+
+        <section className="w-full mt-4">
+          <h3 className="sr-only">Tecnologias e links do projeto</h3>
+          <div className="flex gap-4 mt-3">
+            {/* Item 1 */}
+            <div className="conTec" aria-label={`Tecnologia usada: ${props.tec1}`}>
+              <h4 className="tec">{props.tec1}</h4>
+              <Link
+                href={props.site}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Acessar o site do projeto ${props.nome}`}
+                className="w-full"
+              >
                 <BotaoInvertido texto="Site" />
               </Link>
             </div>
-            <div className="conTec ">
-              <h3 className="tec ">{props.tec2}</h3>
-              <Link href={props.git} target="_blank" className=" w-full">
-                <BotaoInvertido texto="Github" />
+
+            {/* Item 2 */}
+            <div className="conTec" aria-label={`Tecnologia usada: ${props.tec2}`}>
+              <h4 className="tec">{props.tec2}</h4>
+              <Link
+                href={props.git}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Ver o repositório GitHub do projeto ${props.nome}`}
+                className="w-full"
+              >
+                <BotaoInvertido texto="GitHub" />
               </Link>
             </div>
-            <div className="conTec hidden md:alinha ">
-              <h3 className="tec ">{props.tec3}</h3>
-              <Link href={props.whats} target="_blank" className=" w-full ">
+
+            {/* Item 3 (opcional) */}
+            <div
+              className="conTec hidden md:alinha"
+              aria-label={`Tecnologia usada: ${props.tec3}`}
+            >
+              <h4 className="tec">{props.tec3}</h4>
+              <Link
+                href={props.whats}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Entrar em contato pelo WhatsApp sobre o projeto ${props.nome}`}
+                className="w-full"
+              >
                 <BotaoInvertido texto="Contato" />
               </Link>
             </div>
           </div>
-        </div>
-      </div>
-      </Container>
-    </>
+        </section>
+      </article>
+    </Container>
   );
 }

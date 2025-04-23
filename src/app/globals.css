@@ -12,6 +12,7 @@
   --base: #f1f1f1;
   --base2: #dde3f1;
   --corPrincipal: #0f172a;
+  --corPrincipal2: #0f172af7;
   --corPrincipalEnd: #1b2b52;
   --corTexto2: #0c1b3f;
   --corTexto: #94a3b8;
@@ -65,7 +66,7 @@
     @apply flex flex-col justify-center items-center
   }
   .navLink {
-    @apply hover:bg-[var(--base)] hover:text-[var(--corPrincipal)] hover:scale-105 md:p-2 active:bg-[var(--base)] active:text-[var(--corPrincipal)] active:scale-105 ease-in duration-300
+    @apply text-[var(--base)] hover:bg-[var(--base)] hover:text-[var(--corPrincipal)] hover:scale-105 md:p-2 active:bg-[var(--base)] active:text-[var(--corPrincipal)] active:scale-105 ease-in duration-300
   }
   .headerLink {
     @apply text-[var(--corPrincipalEnd)]  hover:text-[var(--base)]
@@ -98,7 +99,10 @@
     @apply  w-[90px] h-[90px] md:w-[125px] lg:w-[88px] rounded-full hover:scale-105
   }
   .contatoLink {
-    @apply  p-2 md:p-2 text-7xl rounded-lg shadow-md  hover:scale-125 cursor-pointer ease-in duration-500 text-[var(--base)] bg-[var(--corPrincipalEnd)] hover:text-[var(--corPrincipalEnd)] hover:bg-[var(--corPrincipalEnd)]
+    @apply  p-2 md:p-2 text-7xl rounded-lg shadow-md  hover:scale-125 cursor-pointer ease-in duration-500 text-[var(--base)] bg-[var(--corPrincipalEnd)] 
+  }
+  .contatoLink2 {
+    @apply  p-2 md:p-2  rounded-lg shadow-md  hover:scale-125 cursor-pointer ease-in duration-500 text-[#1b2b52] bg-[var(--base)]
   }
   .contatoIcones {
     @apply text-5xl md:text-7xl lg:text-5xl
@@ -135,5 +139,4 @@ h2 {
 
 a{
   font-family: var(--fontPrincipal);
-  color: var(--base);
 } 
