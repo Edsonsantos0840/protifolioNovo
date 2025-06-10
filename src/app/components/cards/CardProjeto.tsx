@@ -26,7 +26,7 @@ export default function CardProjeto(props: ProdutoProps) {
       >
         <header className="w-full">
           <h2
-            id={`projeto-${props.nome.replace(/\s+/g, "-")}`}
+            id={`projeto-${props.nome}`}
             className="text-[var(--corPrincipal)] my-2 font-bold text-xl"
           >
             {props.nome}
