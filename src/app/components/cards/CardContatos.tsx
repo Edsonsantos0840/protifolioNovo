@@ -1,7 +1,4 @@
-import React from "react";
-import { FaGithubSquare, FaLinkedin, FaWhatsapp } from "react-icons/fa";
-import { TfiEmail } from "react-icons/tfi";
-import { SocialMediaFields } from "../fields/SocialMediaFields";
+
 import CardSocialMedia from "./CardSocialMedia";
 import Container from "../Container";
 

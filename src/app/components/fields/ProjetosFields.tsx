@@ -72,13 +72,13 @@ export const projetos: ProjetosProps[] = [
   },
   {
     nome: "Martinez Tattoo Stúdios.",
-    descrição: "Projeto está passando por atualizações. Projeto está passando por atualizações. Projeto está passando por atualizações.",
+    descrição: "Este projeto foi desenvolvido para uma cliente, com um sistema de agendamento, utilizando as seguintes tecnologias.",
     imagens: martinez,
     tec1: "React.",
     tec2: "Next.Js.",
     tec3: "Tailwind",
-    site: "/aguarde",
-    git: "/aguarde",
+    site: "https://front-tattoo.vercel.app/",
+    git: "https://github.com/Edsonsantos0840/front-tattoo",
     whats:
       "https://wa.me/5519982350898?text=Ol%C3%A1%20eu%20v%C3%AD%20seu%20portifolio.",
   },
