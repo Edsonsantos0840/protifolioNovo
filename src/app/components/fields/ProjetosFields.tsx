@@ -77,7 +77,7 @@ export const projetos: ProjetosProps[] = [
     tec1: "React.",
     tec2: "Next.Js.",
     tec3: "Tailwind",
-    site: "https://front-tattoo.vercel.app/",
+    site: "https://nice-tattoo-studio.vercel.app/",
     git: "https://github.com/Edsonsantos0840/front-tattoo",
     whats:
       "https://wa.me/5519982350898?text=Ol%C3%A1%20eu%20v%C3%AD%20seu%20portifolio.",
