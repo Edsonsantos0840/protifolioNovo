@@ -1,7 +1,7 @@
 import { StaticImageData } from "next/image";
 import { brasilCard } from "../listas/ListaBrasilcard";
 import { emidio } from "../listas/ListaEmidio";
-// import { marmore } from "../listas/ListaMarmore";
+import { marmore } from "../listas/ListaMarmore";
 import { martinez } from "../listas/ListaMartinez";
 import { shangrila } from "../listas/ListaShangrila";
 
@@ -18,19 +18,31 @@ interface ProjetosProps {
 }
 
 export const projetos: ProjetosProps[] = [
-  // {
-  //   nome: "M&A Marmores e Granitos.",
-  //   descrição:
-  //     "Este projeto Foi feito para um cliente com área de dashboard para controle dos funcionários.",
-  //   imagens: marmore,
-  //   tec1: "React.",
-  //   tec2: "Next.Js.",
-  //   tec3: "Tailwind",
-  //   site: "https://marmores-e-granitos.vercel.app",
-  //   git: "https://github.com/Edsonsantos0840/front-end",
-  //   whats:
-  //     "https://wa.me/5519982350898?text=Ol%C3%A1%20eu%20v%C3%AD%20seu%20portifolio.",
-  // },
+  {
+    nome: "M&A Marmores e Granitos.",
+    descrição:
+      "Este projeto Foi feito para um cliente com área de dashboard para controle dos funcionários.",
+    imagens: marmore,
+    tec1: "React.",
+    tec2: "Next.Js.",
+    tec3: "Tailwind",
+    site: "https://site-marmormore.vercel.app/",
+    git: "https://github.com/Edsonsantos0840/site-marmormore",
+    whats:
+      "https://wa.me/5519982350898?text=Ol%C3%A1%20eu%20v%C3%AD%20seu%20portifolio.",
+  },
+   {
+    nome: "Martinez Tattoo Stúdios.",
+    descrição: "Este projeto foi desenvolvido para uma cliente, com um sistema de agendamento, utilizando as seguintes tecnologias.",
+    imagens: martinez,
+    tec1: "React.",
+    tec2: "Next.Js.",
+    tec3: "Tailwind",
+    site: "https://site-tattoo-pearl.vercel.app/",
+    git: "https://github.com/Edsonsantos0840/site-tattoo",
+    whats:
+      "https://wa.me/5519982350898?text=Ol%C3%A1%20eu%20v%C3%AD%20seu%20portifolio.",
+  },
   {
     nome: "Espaço Emídio e Sá.",
     descrição:
@@ -70,16 +82,5 @@ export const projetos: ProjetosProps[] = [
     whats:
       "https://wa.me/5519982350898?text=Ol%C3%A1%20eu%20v%C3%AD%20seu%20portifolio.",
   },
-  {
-    nome: "Martinez Tattoo Stúdios.",
-    descrição: "Este projeto foi desenvolvido para uma cliente, com um sistema de agendamento, utilizando as seguintes tecnologias.",
-    imagens: martinez,
-    tec1: "React.",
-    tec2: "Next.Js.",
-    tec3: "Tailwind",
-    site: "https://nice-tattoo-studio.vercel.app/",
-    git: "https://github.com/Edsonsantos0840/front-tattoo",
-    whats:
-      "https://wa.me/5519982350898?text=Ol%C3%A1%20eu%20v%C3%AD%20seu%20portifolio.",
-  },
+ 
 ];
