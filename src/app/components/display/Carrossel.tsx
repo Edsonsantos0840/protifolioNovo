@@ -29,6 +29,8 @@ export default function Carrossel({ images }: PropsCarrossel) {
               quality={100}
               src={src}
               alt={`Imagem ${index + 1} de ${images.length}`}
+              width={400}
+              height={250}
               className="w-full h-auto object-contain"
               loading={index === 0 ? "eager" : "lazy"}
               role="img"

@@ -1,14 +1,10 @@
-import { StaticImageData } from "next/image";
-import { brasilCard } from "../listas/ListaBrasilcard";
-import { emidio } from "../listas/ListaEmidio";
-import { marmore } from "../listas/ListaMarmore";
-import { martinez } from "../listas/ListaMartinez";
-import { shangrila } from "../listas/ListaShangrila";
+import { brasilCard, emidio, marmore, martinez, mingo, shangrila } from "../listas/ListImg";
+
 
 interface ProjetosProps {
   nome: string;
   descrição: string;
-  imagens: (string | StaticImageData)[];
+  imagens: string[];
   tec1: string;
   tec2: string;
   tec3: string;
@@ -43,6 +39,32 @@ export const projetos: ProjetosProps[] = [
     whats:
       "https://wa.me/5519982350898?text=Ol%C3%A1%20eu%20v%C3%AD%20seu%20portifolio.",
   },
+    {
+    nome: "Shangrilá Residencial para idosos.",
+    descrição:
+      "Este projeto foi desenvolvido para uma cliente empresária, utilizando as seguintes tecnologias.",
+    imagens: shangrila,
+    tec1: "React.",
+    tec2: "Next.Js.",
+    tec3: "Tailwind",
+    site: "https://shangrila-casa-de-repouso.vercel.app",
+    git: "https://github.com/Edsonsantos0840/casa-de-repouso",
+    whats:
+      "https://wa.me/5519982350898?text=Ol%C3%A1%20eu%20v%C3%AD%20seu%20portifolio.",
+  },
+    {
+    nome: "Mingo Doces, cada receita é uma demonstração de carinho.",
+    descrição:
+      "Este projeto foi desenvolvido para uma cliente empresária, utilizando as seguintes tecnologias.",
+    imagens: mingo,
+    tec1: "React.",
+    tec2: "Next.Js.",
+    tec3: "Tailwind",
+    site: "https://mingo-doceria.vercel.app/",
+    git: "https://github.com/Edsonsantos0840/mingo-doceria",
+    whats:
+      "https://wa.me/5519982350898?text=Ol%C3%A1%20eu%20v%C3%AD%20seu%20portifolio.",
+  },
   {
     nome: "Espaço Emídio e Sá.",
     descrição:
@@ -53,19 +75,6 @@ export const projetos: ProjetosProps[] = [
     tec3: "Tailwind",
     site: "https://emidio.vercel.app/",
     git: "https://github.com/Edsonsantos0840/emidio",
-    whats:
-      "https://wa.me/5519982350898?text=Ol%C3%A1%20eu%20v%C3%AD%20seu%20portifolio.",
-  },
-  {
-    nome: "Shangrilá Residencial para idosos.",
-    descrição:
-      "Este projeto foi desenvolvido para uma cliente empresária, utilizando as seguintes tecnologias.",
-    imagens: shangrila,
-    tec1: "React.",
-    tec2: "Next.Js.",
-    tec3: "Tailwind",
-    site: "https://shangrila-casa-de-repouso.vercel.app",
-    git: "https://github.com/Edsonsantos0840/casa-de-repouso",
     whats:
       "https://wa.me/5519982350898?text=Ol%C3%A1%20eu%20v%C3%AD%20seu%20portifolio.",
   },
