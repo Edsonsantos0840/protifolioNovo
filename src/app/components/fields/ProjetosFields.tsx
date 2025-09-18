@@ -53,7 +53,7 @@ export const projetos: ProjetosProps[] = [
       "https://wa.me/5519982350898?text=Ol%C3%A1%20eu%20v%C3%AD%20seu%20portifolio.",
   },
     {
-    nome: "Mingo Doces, cada receita é uma demonstração de carinho.",
+    nome: "Mingo Doces, receita é uma demonstração de carinho.",
     descrição:
       "Este projeto foi desenvolvido para uma cliente empresária, utilizando as seguintes tecnologias.",
     imagens: mingo,

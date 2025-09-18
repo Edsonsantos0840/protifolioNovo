@@ -27,11 +27,11 @@ export default function CardProjeto(props: ProdutoProps) {
         <header className="w-full">
           <h2
             id={`projeto-${props.nome}`}
-            className="text-[var(--corPrincipal)] my-2 font-bold text-xl"
+            className="text-[var(--corPrincipal)] my-2 lg:my-4 text-center font-bold text-xl"
           >
             {props.nome}
           </h2>
-          <p className="text-[var(--corPrincipal)] my-2 line-clamp-2">
+          <p className="text-[var(--corPrincipal)] text-justify my-2 line-clamp-2">
             {props.descrição}
           </p>
         </header>

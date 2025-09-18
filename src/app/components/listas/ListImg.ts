@@ -9,4 +9,4 @@ export const emidio: string[] = ['/EPS_files/emidio1.png','/EPS_files/emidio2.pn
 
 export const shangrila: string[] = ['/EPS_files/shangrila1.png','/EPS_files/shangrila2.png','/EPS_files/shangrila3.png','/EPS_files/shangrila4.png','/EPS_files/shangrila5.png','/EPS_files/shangrila6.png','/EPS_files/shangrila7.png','/EPS_files/shangrila8.png',];
 
-export const mingo: string[] = ['/EPS_files/mingo1.png','/EPS_files/mingo2.png','/EPS_files/mingo3.png','/EPS_files/mingo4.png','/EPS_files/mingo5.png','/EPS_files/mingo6.png','/EPS_files/mingo7.png','/EPS_files/mingo8.png',];
+export const mingo: string[] = ['/EPS_files/mingo1.png','/EPS_files/mingo2.png','/EPS_files/mingo3.png','/EPS_files/mingo4.png','/EPS_files/mingo5.png','/EPS_files/mingo6.png'];

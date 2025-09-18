@@ -11,7 +11,7 @@ export default function Carrossel({ images }: PropsCarrossel) {
   return (
     <section
       aria-label="Carrossel de imagens do projeto"
-      className="relative lg:w-full overflow-hidden"
+      className="relative lg:w-full overflow-hidden lg:my-3"
     >
       <div
         className={`flex ease-in duration-500 transition-slide`}
@@ -22,7 +22,7 @@ export default function Carrossel({ images }: PropsCarrossel) {
         {images.map((src, index) => (
           <div
             key={index}
-            className="min-w-full flex justify-center items-center"
+            className="min-w-full lg:max-h-[250px] flex justify-center items-center"
             aria-hidden={index !== currentIndex}
           >
             <Image
@@ -30,8 +30,8 @@ export default function Carrossel({ images }: PropsCarrossel) {
               src={src}
               alt={`Imagem ${index + 1} de ${images.length}`}
               width={400}
-              height={250}
-              className="w-full h-auto object-contain"
+              height={230}
+              className="w-full h-auto object-contain shadow-lg"
               loading={index === 0 ? "eager" : "lazy"}
               role="img"
             />
