@@ -16,21 +16,24 @@ export default function Home() {
         <NavBar />
       </header>
 
-      <div className="w-full md:pt-10 lg:pt-0">
-        <section aria-labelledby="apresentacao-heading">
+      <div className="w-full ">
+        <section aria-labelledby="apresentacao-heading pt-32 ">
           <CardHeader />
+        </section>
+
+        <section aria-labelledby="sobre-heading scroll-mt-40">
           <CardApresentação />
         </section>
 
-        <section aria-labelledby="projetos-heading">
+        <section aria-labelledby="projetos-heading scroll-mt-20">
           <CardProjetoSessao />
         </section>
 
-        <section aria-labelledby="tecnologias-heading">
+        <section aria-labelledby="tecnologias-heading scroll-mt-20">
           <CardTecnologia />
         </section>
 
-        <section aria-labelledby="contatos-heading">
+        <section aria-labelledby="contatos-heading scroll-mt-20">
           <CardContatos />
         </section>
 

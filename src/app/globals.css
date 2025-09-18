@@ -7,7 +7,9 @@
   margin: 0px;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --base: #f1f1f1;
   --base2: #dde3f1;

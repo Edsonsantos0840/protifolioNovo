@@ -5,13 +5,13 @@ export default function CardApresentação() {
   return (
     <section
       id="sobre"
-      className="body2 w-full md:alinha4 p-2 alinha mt-0 md:pt-14"
+      className="body2 w-full md:alinha4 p-2 alinha "
       aria-labelledby="titulo-sobre"
     >
       <Container>
         {/* Introdução pessoal */}
         <article
-          className="text-center md:px-5 my-1 md:my-[-35px]"
+          className="text-center md:px-5 my-16 "
           aria-labelledby="titulo-sobre"
         >
           <h2
