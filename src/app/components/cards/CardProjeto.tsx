@@ -21,7 +21,7 @@ export default function CardProjeto(props: ProdutoProps) {
   return (
     <Container>
       <article
-        className="alinha shadow-lg bg-gray-200 p-2 my-2 md:my-4 rounded-lg md:p-4"
+        className="alinha   p-2 my-2 md:my-4 rounded-lg md:p-4"
         aria-labelledby={`projeto-${props.nome.replace(/\s+/g, "-")}`}
       >
         <header className="w-full">

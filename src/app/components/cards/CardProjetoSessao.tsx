@@ -24,7 +24,7 @@ export default function CardProjetoSessao() {
           <article
             key={projeto.nome}
             role="listitem"
-            className="focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-[var(--corPrincipal)]"
+            className=""
             aria-labelledby={`projeto-${projeto.nome.replace(/\s+/g, "-")}`}
           >
             <CardProjeto
